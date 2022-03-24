@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+:root {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f2f2f2;
+}
+*,*::after,*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin-block-start: 4.375rem;
+}
+img {
+    width: 100%;
+    max-inline-size: 100%;
+    block-size: auto;
+    object-fit: cover;
+    height: 100%;
+}
+.radius, .bg {
+    border-radius: 12px;
+}
+.bg {
+    background-color: #fff;
+    padding: 22px;
+}
+
+/* header */
+.header-name {
+    font-weight: 600;
+    color: #4f4f4f;
+    line-height: 29px;
+    font-size: 24px;
+    margin-block-end: 6px;
+}
+.header-pos {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+    margin-block-end: 32px;
+}
+.mail,.phone {
+    display: flex;
+    align-items: center;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #4f4f4f;
+}
+.mail {
+    margin-block-end: 10px;
+}.mail-link {
+    color: #4f4f4f;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+}
+.icon {
+    margin-inline-end: 19px;
+}
+.about-txt {
+    color: #4f4f4f;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    margin-block-start: 36px;
+}
+.container-header {
+    margin-block-end: 1rem;
+    text-transform: capitalize;
+    color: #4f4f4f;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 18px;
+}
+
+
+.exp-main-txt,.hobby-main-txt {
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4f4f4f;
+    margin-block-end: 44px;
+}.date {
+    font-size: 14px;
+    line-height: 17.07px;
+    font-weight: 500;
+    color: #828282;
+    margin-block-end: 12px;
+}.role {
+    color: #333;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 20px;
+    margin-block-end: 30px;
+}.role-description {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #828282;
+}
+.company-logo {
+    width: 84px;
+    height: 84px;
+    margin-inline-end: 1rem;
+}.experiences + .experiences {
+    margin-block-start: 36px;
+}.exp-container {
+    padding-block-start: 17px;
+    padding-block-end: 36px;
+}
+
+
+/* project */
+.labels {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4f4f4f;
+    line-height: 20px;
+    margin-block-end: 25px;
+}.label + .label {
+    margin-inline-start: 9px;
+}.about .title {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 24px;
+    color: #333333;
+    line-height: 29px;
+    margin-block-end: 18px;
+}.content {
+    font-size: 1rem;
+    line-height: 20px;
+    font-weight: 500;
+    color: #828282;
+    margin-block-end: 51px;
+}
+.link {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    border-radius: 12px;
+}a.demo {
+    background: #2F80ED;
+    color: #fff;
+    padding: 13px 38.36px 11px 40.38px;
+    padding-inline: 38.36px 40.38px;
+    padding-block: 13px 11px;
+    text-transform: capitalize;
+    text-decoration: none;
+}a.code {
+    padding: 12px 35.33px 12px 35.33px;
+    padding-inline: 35.33px;
+    padding-block: 12px;
+    background: #fff;
+    border: 1px solid #2F80ED;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-inline-start: 11.1px;
+}
+
+/* hobby */
+.hobby + .hobby {
+    margin-block-start: 36px;
+}.name {
+    text-transform: capitalize;
+    color: #333333;
+    font-size: 18px;
+    line-height: 21.94px;
+    font-weight: 600;
+    margin-block-end: 10px;
+}.hobby-img-container {
+    margin-block-end: 26px;
+    height: 139px;
+}.text {
+    line-height: 19.5px;
+}
+
+/* blog */
+.blog-link {
+    color: #2F80ED;
+    text-decoration: none;
+}
+.title-sm {
+    display: block;
+    font-size: 1rem;
+    color: #e0e0e0;
+    line-height: 19.5px;
+    font-weight: 500;
+    margin-block-end: 30px;
+    text-transform: capitalize;
+}.content .title {
+    color: #333333;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29.26px;
+    margin-block-end: 26px;
+}.text {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 20px;
+    color: #828282;
+}.text + .text {
+    margin-block-start: 1.5rem;
+}.content {
+    flex: 1;
+}
+
+@media (min-width: 768px)
+{
+    html {
+        max-inline-size: 1440px;
+        margin-inline: auto;
+    }
+    body {
+        margin-inline-start: 65px;
+        margin-inline-end: 67.98px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: minmax(auto, 1fr) minmax(auto, 2fr);
+        gap: 1rem;
+        margin-block-end: 135px;
+    }
+   
+    .projects {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    .projects-container > article + article {
+        margin-block-start: 36px;
+    }
+    .blogs {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        margin-block-start: 48px;
+    }
+
+    .exp-container {
+        margin-block-start: 44.83px;
+    }
+    .hobbies-container {
+        margin-block-start: 44px;
+    }
+    .blogs-container {
+        margin-block-start: 48px;
+    }
+
+
+    .header-img {
+        height: 359px;
+        width: 367px;
+        margin-inline: auto;
+        margin-block-end: 24px;
+    }
+    .header > .name,.contact,.about {
+        margin-inline-start: 9.670px;
+    }
+    .about-txt {
+        padding-inline-end: 1.4rem;
+    }
+
+    .project {
+        display: flex;
+    }.project .about {
+        flex: 1;
+    }
+    .project-img {
+        height: 274px;
+        width: 322px;
+        border-radius: 12px;
+        background: #4f4f4f;
+        margin-inline-end: 34px;
+        /* flex: 1; */
+    }
+
+
+    .experiences {
+        display: flex;
+    }
+    
+    .role-description {
+        padding-inline-end: 1rem;
+    }
+
+
+    /* blog */
+    .blog {
+        overflow: hidden;
+    }
+    .blog-container {
+        display: flex;
+    }.blog-img {
+        flex: 1.5;
+        position: relative;
+        right: -3.5%;
+    }.content {
+        margin-inline-end: 40px;
+        flex: 1;
+    }
+}
