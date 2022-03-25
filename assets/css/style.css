@@ -10,6 +10,10 @@
 }
 body {
     margin-block-start: 4.375rem;
+    margin-inline: .8rem;
+}
+.container {
+    margin-block-end: 3rem;
 }
 img {
     width: 100%;
@@ -27,6 +31,9 @@ img {
 }
 
 /* header */
+.header .header {
+    margin-block-end: 2.5rem;
+}
 .header-name {
     font-weight: 600;
     color: #4f4f4f;
@@ -74,6 +81,19 @@ img {
     font-weight: 500;
     line-height: 22px;
     font-size: 18px;
+}
+.exp-container {
+    margin-block-end: 2.5rem;
+}.hobbies-container {
+    margin-block-end: 3rem;
+}
+.projects-container {
+    margin-block-end: 3rem;
+}.project + .project {
+    margin-block-start: 1rem;
+}.project-img {
+    padding: 7rem;
+    background: #4f4f4f;
 }
 
 
@@ -209,7 +229,76 @@ img {
     flex: 1;
 }
 
-@media (min-width: 768px)
+@media (min-width: 768px){
+
+    body {
+        margin-inline: 1.5rem;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr);
+        gap: 1rem;
+        margin-block-end: 135px;
+    }
+   
+    .projects {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    .projects-container > article + article {
+        margin-block-start: 36px;
+    }
+    .blogs {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        margin-block-start: 48px;
+    }
+
+    .exp-container {
+        margin-block-start: 44.83px;
+    }
+    .hobbies-container {
+        margin-block-start: 44px;
+    }
+    .blogs-container {
+        margin-block-start: 48px;
+    }
+
+
+    .header-img {
+        height: 359px;
+        width: 367px;
+        margin-inline: auto;
+        margin-block-end: 24px;
+    }
+    .header > .name,.contact,.about {
+        margin-inline-start: 9.670px;
+    }
+    .about-txt {
+        padding-inline-end: 1.4rem;
+    }
+
+
+    .project-img {
+        height: 274px;
+        width: 322px;
+        border-radius: 12px;
+        background: #4f4f4f;
+        margin-inline-end: 34px;
+    }
+
+
+    .experiences {
+        display: flex;
+    }
+    
+    .role-description {
+        padding-inline-end: 1rem;
+    }
+
+}
+
+@media (min-width: 80rem)
 {
     html {
         max-inline-size: 1440px;
